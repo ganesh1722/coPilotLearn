@@ -16,6 +16,7 @@ public class ConnectMobile {
 		DesiredCapabilities dc = new DesiredCapabilities();
 		dc.setCapability("platformName", "Android");
 		dc.setCapability("deviceName", "Ganesh");
+		dc.setCapability("automationName", "UiAutomator2");
 		dc.setCapability("app", System.getProperty("user.dir")+"/apks/leaforg.apk");
 		AppiumDriver driver= new AppiumDriver(new URL("http://0.0.0.0:4723/wd/hub"),dc);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
