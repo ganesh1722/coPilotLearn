@@ -25,7 +25,7 @@ public class ConnectMobile {
 		driver.findElement(AppiumBy.className("android.widget.Button")).click();
 		Thread.sleep(5000);
 		driver.quit();
-//		I have written this to check git access and used new account
+//		I have written this to check git access and used new account for checking
 
 	}
 
